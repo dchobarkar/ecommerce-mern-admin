@@ -1,16 +1,16 @@
-import { Link, useLocation } from "react-router-dom";
-import "./product.css";
-import Chart from "../../components/chart/Chart";
-import { productData } from "../../dummyData";
-import { Publish } from "@material-ui/icons";
-import { useSelector } from "react-redux";
 import { useEffect, useMemo, useState } from "react";
+import { useSelector } from "react-redux";
+import { Link, useLocation } from "react-router-dom";
+import { Publish } from "@material-ui/icons";
+
+import Chart from "../../components/chart/Chart";
 import { userRequest } from "../../requestMethods";
+import "./product.css";
 
 export default function Product() {
+  const [pStats, setPStats] = useState([]);
   const location = useLocation();
   const productId = location.pathname.split("/")[2];
-  const [pStats, setPStats] = useState([]);
 
   const product = useSelector((state) =>
     state.product.products.find((product) => product._id === productId)
@@ -62,24 +62,29 @@ export default function Product() {
           <button className="productAddButton">Create</button>
         </Link>
       </div>
+
       <div className="productTop">
         <div className="productTopLeft">
           <Chart data={pStats} dataKey="Sales" title="Sales Performance" />
         </div>
+
         <div className="productTopRight">
           <div className="productInfoTop">
             <img src={product.img} alt="" className="productInfoImg" />
             <span className="productName">{product.title}</span>
           </div>
+
           <div className="productInfoBottom">
             <div className="productInfoItem">
               <span className="productInfoKey">id:</span>
               <span className="productInfoValue">{product._id}</span>
             </div>
+
             <div className="productInfoItem">
               <span className="productInfoKey">sales:</span>
               <span className="productInfoValue">5123</span>
             </div>
+
             <div className="productInfoItem">
               <span className="productInfoKey">in stock:</span>
               <span className="productInfoValue">{product.inStock}</span>
@@ -87,6 +92,7 @@ export default function Product() {
           </div>
         </div>
       </div>
+
       <div className="productBottom">
         <form className="productForm">
           <div className="productFormLeft">
@@ -102,6 +108,7 @@ export default function Product() {
               <option value="false">No</option>
             </select>
           </div>
+
           <div className="productFormRight">
             <div className="productUpload">
               <img src={product.img} alt="" className="productUploadImg" />
@@ -110,6 +117,7 @@ export default function Product() {
               </label>
               <input type="file" id="file" style={{ display: "none" }} />
             </div>
+
             <button className="productButton">Update</button>
           </div>
         </form>

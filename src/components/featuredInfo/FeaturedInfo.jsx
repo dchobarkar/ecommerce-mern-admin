@@ -26,6 +26,7 @@ export default function FeaturedInfo() {
 
         <div className="featuredMoneyContainer">
           <span className="featuredMoney">${income[1]?.total}</span>
+
           <span className="featuredMoneyRate">
             %{Math.floor(perc)}{" "}
             {perc < 0 ? (
@@ -47,6 +48,7 @@ export default function FeaturedInfo() {
             -1.4 <ArrowDownward className="featuredIcon negative" />
           </span>
         </div>
+
         <span className="featuredSub">Compared to last month</span>
       </div>
 
@@ -58,6 +60,7 @@ export default function FeaturedInfo() {
             +2.4 <ArrowUpward className="featuredIcon" />
           </span>
         </div>
+
         <span className="featuredSub">Compared to last month</span>
       </div>
     </div>

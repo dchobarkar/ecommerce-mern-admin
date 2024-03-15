@@ -1,14 +1,15 @@
 import { useState } from "react";
-import "./newProduct.css";
+import { useDispatch } from "react-redux";
 import {
   getStorage,
   ref,
   uploadBytesResumable,
   getDownloadURL,
 } from "firebase/storage";
+
 import app from "../../firebase";
 import { addProduct } from "../../redux/apiCalls";
-import { useDispatch } from "react-redux";
+import "./newProduct.css";
 
 export default function NewProduct() {
   const [inputs, setInputs] = useState({});
@@ -21,6 +22,7 @@ export default function NewProduct() {
       return { ...prev, [e.target.name]: e.target.value };
     });
   };
+
   const handleCat = (e) => {
     setCat(e.target.value.split(","));
   };
@@ -71,6 +73,7 @@ export default function NewProduct() {
   return (
     <div className="newProduct">
       <h1 className="addProductTitle">New Product</h1>
+
       <form className="addProductForm">
         <div className="addProductItem">
           <label>Image</label>
@@ -80,6 +83,7 @@ export default function NewProduct() {
             onChange={(e) => setFile(e.target.files[0])}
           />
         </div>
+
         <div className="addProductItem">
           <label>Title</label>
           <input
@@ -89,6 +93,7 @@ export default function NewProduct() {
             onChange={handleChange}
           />
         </div>
+
         <div className="addProductItem">
           <label>Description</label>
           <input
@@ -98,6 +103,7 @@ export default function NewProduct() {
             onChange={handleChange}
           />
         </div>
+
         <div className="addProductItem">
           <label>Price</label>
           <input
@@ -107,10 +113,12 @@ export default function NewProduct() {
             onChange={handleChange}
           />
         </div>
+
         <div className="addProductItem">
           <label>Categories</label>
           <input type="text" placeholder="jeans,skirts" onChange={handleCat} />
         </div>
+
         <div className="addProductItem">
           <label>Stock</label>
           <select name="inStock" onChange={handleChange}>

@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Ecommerce MERN Admin
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This repository contains the admin panel for a comprehensive e-commerce application built using the MERN stack (MongoDB, Express, React, Node.js). The admin panel is designed to provide administrators with the functionality to manage product listings, including adding new products and updating existing ones.
 
-In the project directory, you can run:
+## Features
 
-### `yarn start`
+- **Product Management**: Add, update, and remove products from the e-commerce catalog.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Category Management**: Organize products by categories for easier navigation and management.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Order Management**: View and manage customer orders (future scope).
 
-### `yarn test`
+- **User Management**: Handle admin user roles and permissions (future scope).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `yarn build`
+- Frontend: React
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Backend: Node.js with Express
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Database: MongoDB
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Authentication: JWT for secure login and session management
 
-### `yarn eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To install this project, follow these steps:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    $ git clone https://github.com/dchobarkar/ecommerce-mern-admin.git
+    $ cd ecommerce-mern-admin
+    $ npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Set up your `.env` files in both the backend and frontend directories to include necessary environment variables such as database URI, JWT secret, etc.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Usage
 
-## Learn More
+To run the application, use the following command:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    $ npm run dev
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Navigate to `http://localhost:3000` in your browser to use the application.
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions to this project are welcome. Follow these steps to contribute:
 
-### Analyzing the Bundle Size
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a pull request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+Distributed under the MIT License. See `LICENSE` file for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contact
 
-### Advanced Configuration
+Darshan Chobarkar - [@dchobarkar](https://www.linkedin.com/in/dchobarkar/) - [@barbatos\_\_08](https://twitter.com/barbatos__08) - contact@darshanwebdev.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: [https://github.com/dchobarkar/ecommerce-mern-admin](https://github.com/dchobarkar/ecommerce-mern-admin)

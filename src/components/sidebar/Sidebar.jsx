@@ -1,4 +1,4 @@
-import "./sidebar.css";
+import { Link } from "react-router-dom";
 import {
   LineStyle,
   Timeline,
@@ -13,7 +13,8 @@ import {
   WorkOutline,
   Report,
 } from "@material-ui/icons";
-import { Link } from "react-router-dom";
+
+import "./sidebar.css";
 
 export default function Sidebar() {
   return (
@@ -23,21 +24,24 @@ export default function Sidebar() {
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
             <Link to="/" className="link">
-            <li className="sidebarListItem active">
-              <LineStyle className="sidebarIcon" />
-              Home
-            </li>
+              <li className="sidebarListItem active">
+                <LineStyle className="sidebarIcon" />
+                Home
+              </li>
             </Link>
+
             <li className="sidebarListItem">
               <Timeline className="sidebarIcon" />
               Analytics
             </li>
+
             <li className="sidebarListItem">
               <TrendingUp className="sidebarIcon" />
               Sales
             </li>
           </ul>
         </div>
+
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
@@ -47,22 +51,26 @@ export default function Sidebar() {
                 Users
               </li>
             </Link>
+
             <Link to="/products" className="link">
               <li className="sidebarListItem">
                 <Storefront className="sidebarIcon" />
                 Products
               </li>
             </Link>
+
             <li className="sidebarListItem">
               <AttachMoney className="sidebarIcon" />
               Transactions
             </li>
+
             <li className="sidebarListItem">
               <BarChart className="sidebarIcon" />
               Reports
             </li>
           </ul>
         </div>
+
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Notifications</h3>
           <ul className="sidebarList">
@@ -70,16 +78,19 @@ export default function Sidebar() {
               <MailOutline className="sidebarIcon" />
               Mail
             </li>
+
             <li className="sidebarListItem">
               <DynamicFeed className="sidebarIcon" />
               Feedback
             </li>
+
             <li className="sidebarListItem">
               <ChatBubbleOutline className="sidebarIcon" />
               Messages
             </li>
           </ul>
         </div>
+
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Staff</h3>
           <ul className="sidebarList">
@@ -87,10 +98,12 @@ export default function Sidebar() {
               <WorkOutline className="sidebarIcon" />
               Manage
             </li>
+
             <li className="sidebarListItem">
               <Timeline className="sidebarIcon" />
               Analytics
             </li>
+
             <li className="sidebarListItem">
               <Report className="sidebarIcon" />
               Reports

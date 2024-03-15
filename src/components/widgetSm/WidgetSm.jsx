@@ -32,9 +32,11 @@ export default function WidgetSm() {
               alt=""
               className="widgetSmImg"
             />
+
             <div className="widgetSmUser">
               <span className="widgetSmUsername">{user.username}</span>
             </div>
+
             <button className="widgetSmButton">
               <Visibility className="widgetSmIcon" />
               Display

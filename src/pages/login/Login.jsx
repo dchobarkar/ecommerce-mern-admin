@@ -29,12 +29,14 @@ const Login = () => {
         placeholder="username"
         onChange={(e) => setUsername(e.target.value)}
       />
+
       <input
         style={{ padding: 10, marginBottom: 20 }}
         type="password"
         placeholder="password"
         onChange={(e) => setPassword(e.target.value)}
       />
+
       <button onClick={handleClick} style={{ padding: 10, width: 100 }}>
         Login
       </button>
